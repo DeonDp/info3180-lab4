@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+ 
+{% block main %}
+    <p>These are a list of uploads:</p>
+    <ul>
+        {% for upload in uploads %}
+            <li>{{upload}}</li>
+        {% endfor %}
+    </ul>
+{% endblock %}
+ 
